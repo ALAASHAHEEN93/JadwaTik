@@ -1,0 +1,170 @@
+<head>
+   <meta charset="utf-8">
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+      integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous" />
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <link href="https://fonts.googleapis.com/css?family=Cairo&display=swap" rel="stylesheet">
+   <link rel="shortcut icon" href="#">
+   <link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css" />
+   <link rel="stylesheet" href="assets/css/Css.css" type="text/css" />
+</head>
+
+<body class="text-center">
+   <div class="content">
+      <Section class="MainPageSection">
+
+         <nav class="navbar navbar-expand-lg">
+            <strong class="Logo">
+               جدوى تك
+            </strong>
+
+            <div class="collapse navbar-collapse" id="navbars">
+               <a href="#" class="notification">
+                  <span> <i class=" fa fa-bell notofication"></i></span>
+                  <span class="badge">3</span>
+               </a>
+               <div class="media">
+                  <img class="d-flex rounded-circle  mx-4 z-depth-1-half mr-3 notificationimg"
+                     src="https://mdbootstrap.com/img/Photos/Avatars/avatar-5.jpg" alt="Avatar">
+                  <div class="media-body">
+                     <h5 class="mt-0 notificationtext">محمد خالد</h5>
+                  </div>
+         </nav>
+
+
+         <section class="Services text-center">
+            <div class="container ">
+               <div class="dark-background">
+               </div>
+
+               <div class="row imagetiles">
+                     <div class="col-lg-1 col-md-1 col-sm-1 col-xs-6 my-4 mx-2">
+                           <i class="fas fa-user-tie my-3"></i>
+                           <h2 class="imgTitle my-4"> نص نص</h2>
+                  </div>
+
+                  <div class="col-lg-1 col-md-1 col-sm-1 col-xs-6 my-4 mx-2">
+                        <i class="fas fa-user-tie my-3"></i>
+
+                     <h2 class="imgTitle my-4"> نص نص</h2>
+
+                  </div>
+
+                  <div class="col-lg-1 col-md-1 col-sm-1 col-xs-6 my-4 mx-2">
+                        <i class="fas fa-user-tie my-3"></i>
+
+                     <h2 class="imgTitle my-4"> نص نص</h2>
+
+
+                  </div>
+
+                  <div class="col-lg-1 col-md-1 col-sm-1 col-xs-6 my-4 mx-2">
+                        <i class="fas fa-user-tie my-3"></i>
+                        <h2 class="imgTitle my-4"> نص نص</h2>
+
+                  </div>
+
+                  <div class="col-lg-1 col-md-1 col-sm-1 col-xs-6 my-4 mx-2">
+                        <i class="fas fa-user-tie my-3"></i>
+                        <h2 class="imgTitle my-4"> نص نص</h2>
+
+                  </div>
+
+                  <div class="col-lg-1 col-md-1 col-sm-1 col-xs-6 my-4 mx-2">
+                        <i class="fas fa-user-tie my-3"></i>
+                        <h2 class="imgTitle my-4"> نص نص</h2>
+
+                  </div>
+
+
+
+               </div>
+
+</div>
+<div class="container ">
+
+               <h1 class="MainPage my-5"> الرئيسية</h1>
+
+               <div class="row MainSection">
+                  <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6 my-4 mx-3 MainSectionDiv">
+                     <div class="steps my-3">
+                        <span>
+                           <a>3</a></span>
+                     </div>
+                     <h2 class="imgTitle my-4"> دراسه جدوى</h2>
+                  </div>
+
+                  <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6 my-4 mx-3 MainSectionDiv">
+                     <div class="steps my-3">
+                        <span>
+                           <a>3</a></span>
+                     </div>
+                     <h2 class="imgTitle my-4"> دراسه جدوى</h2>
+
+                  </div>
+
+                  <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6 my-4 mx-3 MainSectionDiv">
+                     <div class="steps my-3">
+                        <span>
+                           <a>3</a></span>
+                     </div>
+                     <h2 class="imgTitle my-4"> دراسه جدوى</h2>
+
+
+                  </div>
+
+                  <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6 my-4 mx-3 MainSectionDiv">
+                     <div class="steps my-3">
+                        <span>
+                           <a>3</a></span>
+                     </div>
+                     <h2 class="imgTitle my-4">   الباقة الرئيسية</h2>
+</div>
+
+
+
+                  </div>
+
+                  <div class="col-md-6">
+
+                     <canvas id="doughnutChart"></canvas>
+
+                  </div>
+
+                  <div class="col-md-6">
+
+                     <canvas id="doughnutChart"></canvas>
+
+                  </div>
+               </div>
+         </section>
+
+
+
+
+</body>
+<script>
+   
+var ctxD = document.getElementById("doughnutChart").getContext('2d');
+var myLineChart = new Chart(ctxD, {
+type: 'doughnut',
+data: {
+labels: ["Red", "Green", "Yellow", "Grey", "Dark Grey"],
+datasets: [{
+data: [300, 50, 100, 40, 120],
+backgroundColor: ["#F7464A", "#46BFBD", "#FDB45C", "#949FB1", "#4D5360"],
+hoverBackgroundColor: ["#FF5A5E", "#5AD3D1", "#FFC870", "#A8B3C5", "#616774"]
+}]
+},
+options: {
+responsive: true
+}
+});
+ 
+</script>
+<!--Script Section -->
+<script src="assets/js/jquery-3.3.1.min.js"></script>
+<script src="assets/js/popper.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/main.js"></script>
+ 
