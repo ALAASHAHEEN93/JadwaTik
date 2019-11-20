@@ -19,9 +19,12 @@ a.nav-link {
 height: 46px;
 }
 a.nav-link:hover{
+	border: none;
   border-bottom: 2px solid #650098;
 }
-
+.LoginSection .nav-tabs {
+    padding: 0px;
+}
 body {
 	direction: rtl;
   font-family: 'Cairo', sans-serif;
@@ -36,15 +39,12 @@ section {
 
 
 
-strong.Logo {
+h1.Logo {
 	color: #650098;
 	font-size: 30px;
 }
 
-strong.LoginTitle {
-	color:white;
-	font-size: 30px;
-}
+
 button.btn.btn-link{
 
 text-decoration: none;
@@ -72,6 +72,10 @@ button.btn.btn-outline-success.my-2.my-sm-0 {
 	border-radius: 5px;
 	border: 2px solid #650098;
 	color: #650098;
+ }
+a.LoginButton{
+	margin: 9px;
+  	color: #650098;
 }
 
 .mainsection {
@@ -80,7 +84,15 @@ button.btn.btn-outline-success.my-2.my-sm-0 {
 
 button.btn.btn-outline-success.my-2.my-sm-0:hover {
 	background-color: #650098;
-	color: white;
+	color: white ;
+	border-bottom: none;
+ 
+
+}
+a.LoginButton:hover {
+	background-color: #650098;
+	color: white ;
+	border-bottom: none;
 }
 
 .Title {
@@ -151,6 +163,8 @@ button.btn.btn-outline-success.my-2.my-sm-0.Rigister {
 	width: 175px;
 	height: 53px;
 	margin-right: 125px;
+	color: #650098;
+
 }
 h2.imgTitle{
 	font-size: 16px;
@@ -440,7 +454,7 @@ a.text-ul {
 	text-align: center;
 	color: #ffffff;
 	background-color: #640097;
-	padding-top: 75px;
+	padding: 65px 0px;
 	height: 171px;
 }
 
@@ -477,7 +491,7 @@ p.abutUsPargraph.my-4 {
 }
 .sidebar-Contact li {
   text-align: center;
-  margin-left: 88px;
+  margin: 45px;
   width: 164px;
   height: 162px;  margin-bottom: 3px!important;
   border-radius: 8px;
@@ -619,9 +633,7 @@ color: white;
 
 /* BLog Css */
 a.nav-link.active{
- 	font-size: 24px;
 	font-weight: bold;
- 
 	color: #282828;
 }
 
@@ -657,16 +669,17 @@ a.nav-link{
 
 .LoginSection{
 	background-color: #650098 ;
-	height: 100%;
-	padding-top: 149px;
 }
 
-input#Email{
+.LoginSection input,
+.LoginSection input:focus{
+	border:none;
 	border-radius: 4px;
 	background-color: #7c26a7;
 }
 
-input#Email::placeholder {
+.LoginSection input::placeholder,
+.LoginSection input:focus {
     font-size: 14px;
     font-weight: normal;
     font-stretch: normal;
